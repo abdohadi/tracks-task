@@ -12,7 +12,7 @@
 	<section class="main overlay flex">
 		<div class="left column-center">
 			<div>
-				<h1>WELCOME TO OUR AUDIO</h1>
+				<h1>WELCOME TO OUR PLAYLIST</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas distinctio optio aspernatur, quas vero, ipsam. Saepe vel eum, repellendus temporibus?</p>
 			</div>
 		</div>
@@ -22,114 +22,14 @@
 				<div class="tracks">
 					<h2 class="tracks-heading">CHOOSE YOUR FAVOURITE TRACK</h2>
 	
-					<div class="track flex">
-						<div class="track-num column-center">
-							<div class="num-circle overlay"><span>1</span></div>
-						</div>
-
-						<div class="track-info flex">
-							<div class="column-center">
-								<h3 class="track-name">Hello World</h3>
-								<div class="track-artist">Eminem</div>
-							</div>
-
-							<div class="track-length column-center">
-								<span>3:34</span>
-							</div>
-						</div>
-
-						<div class="track-download column-center">
-							<button class="download-btn">Download</button>
-						</div>
-					</div>
-
-					<div class="track flex">
-						<div class="track-num column-center">
-							<div class="num-circle overlay"><span>2</span></div>
-						</div>
-
-						<div class="track-info flex">
-							<div class="column-center">
-								<h3 class="track-name">Hello World</h3>
-								<div class="track-artist">Eminem</div>
-							</div>
-
-							<div class="track-length column-center">
-								<span>3:34</span>
-							</div>
-						</div>
-
-						<div class="track-download column-center">
-							<button class="download-btn">Download</button>
-						</div>
-					</div>
-
-					<div class="track flex">
-						<div class="track-num column-center">
-							<div class="num-circle overlay"><span>3</span></div>
-						</div>
-
-						<div class="track-info flex">
-							<div class="column-center">
-								<h3 class="track-name">Hello World</h3>
-								<div class="track-artist">Eminem</div>
-							</div>
-
-							<div class="track-length column-center">
-								<span>3:34</span>
-							</div>
-						</div>
-
-						<div class="track-download column-center">
-							<button class="download-btn">Download</button>
-						</div>
-					</div>
-
-					<div class="track flex">
-						<div class="track-num column-center">
-							<div class="num-circle overlay"><span>4</span></div>
-						</div>
-
-						<div class="track-info flex">
-							<div class="column-center">
-								<h3 class="track-name">Hello World</h3>
-								<div class="track-artist">Eminem</div>
-							</div>
-
-							<div class="track-length column-center">
-								<span>3:34</span>
-							</div>
-						</div>
-
-						<div class="track-download column-center">
-							<button class="download-btn">Download</button>
-						</div>
-					</div>
-
-					<div class="track flex">
-						<div class="track-num column-center">
-							<div class="num-circle overlay"><span>5</span></div>
-						</div>
-
-						<div class="track-info flex">
-							<div class="column-center">
-								<h3 class="track-name">Hello World</h3>
-								<div class="track-artist">Eminem</div>
-							</div>
-
-							<div class="track-length column-center">
-								<span>3:34</span>
-							</div>
-						</div>
-
-						<div class="track-download column-center">
-							<button class="download-btn">Download</button>
-						</div>
-					</div>
+					<!-- All tracks are added here -->
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+	<script type="text/javascript" src="layout/js/jquery.min.js"></script>
+	<script type="text/javascript" src="layout/js/script.js"></script>
 </body>
 </html>

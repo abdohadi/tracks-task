@@ -10,6 +10,20 @@ body {
 	--secondary-color: #c0aa81;
 }
 
+.fail {
+	position: absolute !important;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #8a1e1e;
+	padding: 20px;
+	font-size: 18px;
+	color: #eee;
+	text-align: center;
+	display: none
+}
+
 .flex {
 	display: flex;
 }
@@ -60,11 +74,14 @@ body {
 			font-size: 30px;
 			margin-bottom: 10px;
 			color: var(--secondary-color);
+			display: none;
 		}
 
 		.main .left p {
 			font-size: 16px;
 			line-height: 1.5;
+			top: 40px;
+			opacity: 0;
 		}
 
 
@@ -81,6 +98,7 @@ body {
 			color: #8e8e8e;
 			margin-left: 16px;
 			font-size: 18px;
+			display: none;
 		}
 
 		.main .tracks-container .tracks {
@@ -89,6 +107,7 @@ body {
 		}
 
 			.main .tracks .track {
+				background: rgba(0,0,0,.2);
 			    color: var(--main-color);
 				padding: 13px;
 				margin: 26px 10px;
@@ -100,6 +119,8 @@ body {
 				-moz-transition: all .3s ease;
 				-o-transition: all .3s ease;
 				transition: all .3s ease;
+				bottom: 50px;
+				opacity: 0;
 			}
 			.main .tracks .track:hover {
 				-webkit-box-shadow: 2px 1px 10px -3px var(--secondary-color);
@@ -135,7 +156,7 @@ body {
 				}
 
 					.main .tracks .track .track-info .track-name {
-						font-size: 20px;
+						font-size: 18px;
 						margin-bottom: 7px;
 					}
 
@@ -153,18 +174,18 @@ body {
 				}
 
 					.main .tracks .track .track-download .download-btn {
-						color: var(--main-color);
 						background: transparent;
-						border: 1px solid #646462;
+						color: var(--secondary-color);
+						border: 1px solid var(--secondary-color);
 						padding: 10px;
 						border-radius: 10px;
 						cursor: pointer;
-						-webkit-transition: all .3s ease;
-						-moz-transition: all .3s ease;
-						-o-transition: all .3s ease;
-						transition: all .3s ease;
+						-webkit-transition: all .3s ease-in-out;
+						-moz-transition: all .3s ease-in-out;
+						-o-transition: all .3s ease-in-out;
+						transition: all .3s ease-in-out;
 					}
 					.main .tracks .track .track-download .download-btn:hover {
-						color: var(--secondary-color);
-						border-color: var(--secondary-color);
+						background: var(--secondary-color);
+						color: #000;
 					}
