@@ -1,0 +1,170 @@
+/*#c0aa81  #e9cca7*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial;
+	--main-color: #dbdbda;
+	--secondary-color: #c0aa81;
+}
+
+.flex {
+	display: flex;
+}
+
+.column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.overlay::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.5);
+}
+.overlay * {
+	position: relative;
+	z-index: 10;
+}
+
+.main {
+	background: url('../images/microphone.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	overflow-y: scroll;
+}
+
+.main::after {
+	position: fixed;
+}
+
+.main .left {
+	color: var(--main-color);
+}
+
+	.main .left > div {
+		width: 85%;
+		margin: auto;
+	}
+
+		.main .left h1 {
+			font-size: 30px;
+			margin-bottom: 10px;
+			color: var(--secondary-color);
+		}
+
+		.main .left p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+
+.main > div {
+	flex: 1;
+}
+
+	.main .tracks-container {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+		.main .tracks-container .tracks-heading {
+			color: #8e8e8e;
+			margin-left: 16px;
+			font-size: 18px;
+		}
+
+		.main .tracks-container .tracks {
+			width: 90%;
+			margin: auto;
+		}
+
+			.main .tracks .track {
+			    color: var(--main-color);
+				padding: 13px;
+				margin: 26px 10px;
+				-webkit-box-shadow: 3px 2px 5px -2px #282828;
+				-moz-box-shadow: 3px 2px 5px -2px #282828;
+				-o-box-shadow: 3px 2px 5px -2px #282828;
+				box-shadow: 3px 2px 5px -2px #282828;
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				transition: all .3s ease;
+			}
+			.main .tracks .track:hover {
+				-webkit-box-shadow: 2px 1px 10px -3px var(--secondary-color);
+				-moz-box-shadow: 2px 1px 10px -3px var(--secondary-color);
+				-o-box-shadow: 2px 1px 10px -3px var(--secondary-color);
+				box-shadow: 2px 1px 10px -3px var(--secondary-color);
+			}
+
+				.main .tracks .track .track-num {
+					flex: 1;
+				}
+
+					.main .tracks .track .track-num .num-circle {
+					    background: url('../images/music.jpg');
+					    background-size: 100% 100%;
+					    height: 50px;
+					    width: 50px;
+					    border-radius: 50%;
+					    line-height: 50px;
+					    text-align: center;
+					    font-size: 19px;
+					    font-weight: bold;
+					    color: var(--main-color);
+					    align-items: center;
+					}
+					.main .tracks .track .track-num .num-circle::after {
+						border-radius: 50%;
+						background: rgba(0,0,0,.3);
+					}
+
+				.main .tracks .track .track-info {
+					flex: 3;
+				}
+
+					.main .tracks .track .track-info .track-name {
+						font-size: 20px;
+						margin-bottom: 7px;
+					}
+
+					.main .tracks .track .track-info .track-length {
+						margin-left: auto;
+						margin-right: 62px;
+					}
+
+						.main .tracks .track .track-info .track-length > span {
+							position: absolute;
+						}
+
+				.main .tracks .track .track-download {
+					flex: 1;
+				}
+
+					.main .tracks .track .track-download .download-btn {
+						color: var(--main-color);
+						background: transparent;
+						border: 1px solid #646462;
+						padding: 10px;
+						border-radius: 10px;
+						cursor: pointer;
+						-webkit-transition: all .3s ease;
+						-moz-transition: all .3s ease;
+						-o-transition: all .3s ease;
+						transition: all .3s ease;
+					}
+					.main .tracks .track .track-download .download-btn:hover {
+						color: var(--secondary-color);
+						border-color: var(--secondary-color);
+					}
