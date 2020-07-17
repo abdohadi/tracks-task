@@ -1,3 +1,7 @@
+<?php 
+	include_once('core/init.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +31,30 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="form-section overlay">
+		<div class="form-container">
+			<div class="form-head">You need to login in order to download</div>
+
+			<form class="login-form" action="login.php" method="POST">
+				<div>
+					<input type="text" name="username" placeholder="Username">
+				</div>
+
+				<div>
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				
+				<div>
+					<input type="submit" value="Login" class="btn login-btn">
+				</div>
+			</form>
+
+			<span class="x" draggable="true">x</span>
+		</div>
+	</div>
+
+	<div class="downloading"><span>Preparing the file.... <br> Please wait!</span></div>
 
 
 	<script type="text/javascript" src="layout/js/jquery.min.js"></script>
